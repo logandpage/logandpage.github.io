@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: greenyellow;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    background-color: #072c50;
+  }  
+
+header h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #b88746;
+    margin: 0;
+    left: 150px;
+  }
+
+header a {
+    text-decoration: none;
+    color: #b88746;
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+header nav {
+    margin: 7px 0;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}  
+
+.intro {
+    color: #072c50;
+}
+
+.section-title {
+    color: #072c50;
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+
+p {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+
+/*Contact Start*/  
+section nav ul li {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}    
+/*Contact Ends*/
+
+/*Footer*/
