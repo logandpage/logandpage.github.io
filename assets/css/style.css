@@ -5,15 +5,17 @@
 }
 
 body{
-    background-color: greenyellow;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
 }
-
+ /*Header Starts*/
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #072c50;
+    font-family: 'Times New Roman', Times, serif;
   }  
 
 header h1 {
@@ -47,29 +49,53 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
-}  
+}
+/*Header End*/
+
+/*Hero Start*/
+.hero {
+    background-image: url("../../images/jujuy-hero.jpg");
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #b88746;
+}
+/*Hero End*/
 
 .intro {
     color: #072c50;
 }
 
+img {
+    height: 300px;
+    width: 450px;
+}
+
 .section-title {
-    color: #072c50;
-    width: 410px;
+    font-size: 55px;
     display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
-    color: white;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #072c50;
 }
 
 p {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
+    color: #072c50;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 40px 20px 40px;
     text-align: left;
-    margin: 30px 0 0 60px;
-    color: white;
+}
+
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*Contact Start*/  
