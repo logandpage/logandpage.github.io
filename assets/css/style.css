@@ -6,19 +6,19 @@
 
 body{
     background-color: whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-}
+} 
  /*Header Starts*/
 header {
-    display: flex;
+    display: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #072c50;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
   }  
 
-header h1 {
+header h1 a{
     font-weight: bolder;
     font-size: 40px;
     color: #b88746;
@@ -31,6 +31,13 @@ header a {
     color: #b88746;
     font-weight: bold;
     text-decoration: underline;
+}
+
+header a:hover {
+  background: #b88746;
+  color: #072c50;
+  border-radius: 5px;
+  text-shadow: none;
 }
   
 header nav {
@@ -49,6 +56,13 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover{
+  background: #b88746;
+  color: #072c50;
+  border-radius: 5px;
+  text-shadow: none;
 }
 /*Header End*/
 
@@ -83,33 +97,46 @@ header nav ul li a {
 }
 /*Hero End*/
 
-.intro {
-    color: #072c50;
+/* Index Start*/
+#list {
+  text-align: center;
+  padding: 20px;
+  font-size: 45px;
+  color: #072c50;
 }
 
-.photo-1 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
+.link a {
+  padding: 20px;
+  color: #072c50;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 55px;
-    width: 50%;
-    padding: 10px;
-    border-bottom: 3px solid;
-    margin: auto;
-    color: #072c50;
+.link a:hover {
+  background: #b88746;
+  color: #072c50;
+  border-radius: 15px;
+  text-shadow: none;
+}
+/* Index End */
+
+/* About Me Start */
+h2 {
+  font-weight: bolder;
+  font-size: 35px;
+  color: #072c50;
+  margin: 0;
+  left: 150px;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
 }
 
 p {
-    text-align: center;
-    padding: 25px;
-    font-size: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
+/* About Me End */
 
 /*Contact Start*/  
 section nav {
@@ -131,159 +158,26 @@ section nav ul li a {
     padding: 10px;
     font-weight: lighter;
     font-size: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #072c50;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 section nav ul li a:hover {
     background: #b88746;
     color: #072c50;
     border-radius: 15px;
-    text-shadow: none;
 }
 /*Contact Ends*/
 
 /*Work Project Starts*/
 
-
-.cards {
-    margin: 0;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px;
-    grid-template-areas:
-      "a a b"
-      "c d d"
-      "e e e";
-  }
-  
-  .card {
-    padding: 1em;
-    line-height: 1.4;
-    border-radius: 4px;
-}
-
+/* Work Project Ends */
 img {
     display: flex;
     width: 100%;
-    height: auto;
+    padding: 20px;
 }
 
-.llamas:hover {
-    filter: blur(2px);
+img:hover {
+  filter: brightness(50%);
 }
-
-.clock:hover {
-    filter: blur(2px);
-}
-
-.water:hover {
-    filter: blur(2px);
-}
-
-.horiseon:hover {
-    filter: blur(2px)
-}
-
-.run:hover {
-    filter: blur(2px);
-}
-
-.water {
-    width: 100%;
-    height: 100%;
-}
-
-.clock {
-    vertical-align: baseline;
-}
-  
-  .card1 { grid-area: a; }
-  .card2 { grid-area: b; }
-  .card3 { grid-area: c; }
-  .card4 { grid-area: d; }
-  .card5 { grid-area: e; }
-
-/*Work Project Ends*/
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-    }
-  
-    
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-      justify-content: center;
-    }
-  
-    .section-title {
-      width: 80%;
-    }
-    
-    .card {
-      flex: 0 70%;
-    }
-
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-    section {
-      padding: 30px 15px;
-    }
-  
-
-    img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    .hero {
-        width: 100%;
-      }
-    
-      .section-title {
-        width: 95%;
-      }
-    
-      .intro p {
-        width: 100%;
-      }
-    
-      .trainer {
-        flex: 0 100%;
-      }
-    
-      .contact-info {
-        text-align: center;
-      }
-    
-      .contact-info > * {
-        flex: 0 100%;
-      }
-    
-      .contact-form {
-        order: 3;
-      }
-}     
