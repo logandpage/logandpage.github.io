@@ -2,33 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <!-- Dev Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/336898dd2f.js" crossorigin="anonymous"></script>
     <title>My Profile</title>
 </head>
 
 <body>
     <header>
-        <h1>
-            <a href="index.html">Logan Page</a>
-        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="hero"></section>
-    
-    <section id="list">
-        <div class="link">
-            <a class="container" href="html/aboutMe.html">About Me</a>
-        </div>
-        <div class="link">
-            <a class="container" href="html/project.html">Projects</a>
-        </div>
-        <div class="link">
-            <a class="container" href="html/contact.html">Contact</a>
+
+    <section class='hero'>
+        <div class='second-color'></div>
+        <h1>Hello, my name is Logan Page</h1>
+    </section>
+
+    <section id="about-me">
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h2 id="about_me">About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim et at magni recusandae. Deserunt modi soluta omnis saepe recusandae facilis tempore. Officiis itaque, consequatur perspiciatis nam dolorem ipsum enim laudantium?
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa recusandae accusantium pariatur et odio omnis vel, animi maiores totam laudantium vitae iusto consequuntur doloribus, tenetur dolor debitis natus modi.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam quas, officiis quisquam temporibus similique id aperiam vero nemo ipsum architecto, iusto earum adipisci blanditiis quo. Reprehenderit voluptas dolorum ab.
+                </p>
+            </div>    
+            <img src="images/Photo-me.JPG" class="pure-u-1-2">
+        </div>    
+        <!-- <h3>Skills</h3>
+        <ul class="skills">
+            <li class="skill-items">HTML</li>
+            <li class="skill-items">CSS</li>
+            <li class="skill-items">Javascript</li>
+            <li class="skill-items">Express.js</li>
+            <li class="skill-items">Node.js</li>
+            <li class="skill-items">Jest.js</li>
+            <li class="skill-items">React.js</li>
+            <li class="skill-items">MongoDB</li>
+            <li class="skill-items">SQL</li>
+            <li class="skill-items">MySQL</li>
+        </ul> -->
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+            <div class='project-grid'>
+                <div class="grid-item item-one">
+                  <a href='https://immense-mesa-76865.herokuapp.com/'>
+                    <h4>Fortress of Fandom</h4>
+                    <a class="project-description" href='https://github.com/logandpage/fortress-of-fandom'>GitHub</a>
+                  </a>
+                </div>
+                <div class="grid-item item-two">
+                  <a href='https://frozen-mesa-37887.herokuapp.com/'>
+                    <h4>Schedule</h4>
+                    <a class="project-description">GitHub</a>
+                  </a>
+                </div>
+                <div class="grid-item item-three">
+                  <a href='https://desolate-inlet-16467.herokuapp.com/'>
+                    <h4>Holiday Planner</h4>
+                    <a class="project-description" href='https://github.com/logandpage/holiday-planner'>GitHub</a>
+                  </a>
+                </div>
+                <div class="grid-item item-four">
+                  <a href="https://rocky-everglades-54421.herokuapp.com/">
+                    <h4>Book Search</h4>
+                    <a class="project-description" href='https://github.com/logandpage/book-engine-search'>GitHub</a>
+                  </a>
+                </div>
+                <div class="grid-item item-five">
+                  <a href='https://logandpage.github.io/wheather-city/'>
+                    <h4>Weather City</h4>
+                    <a class="project-description" href='https://github.com/logandpage/wheather-city'>GitHub</a>
+                  </a>
+                </div>
+            </div>
+        </div>    
+        <div id="tech-used">
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-express-original colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-mongodb-plain colored"></i>
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-heroku-plain-wordmark colored"></i>
         </div>
     </section>
+
+    <footer id='contact'>
+        <h2>Contact Me</h2>
+        <div class=''>
+      </div>
+        <div class='contact-item'>
+          <a href="https://github.com/logandpage">
+            <i class='fab fa-github'></i>
+            </br>
+            <span class='contact-link'>GitHub</span></a>
+        </div>
+        <div class='contact-item'>
+          <a href='www.linkedin.com/in/logan-page-49b8661b2'>
+            <i class="fab fa-linkedin"></i>
+          </br>
+            <span class='contact-link'>LinkedIn</span></a>
+        </div>
+        <div class='contact-item'>
+          <a href='mailto:logandpage5@gmail.com'>
+            <i class="fas fa-envelope-open"></i>
+          </br>
+            <span class='contact-link'>logandpage5@gmail.com</span></a>
+        </div>
+      </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous">
+    </script>  
 </body>
 </html>

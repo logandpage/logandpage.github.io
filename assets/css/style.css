@@ -1,188 +1,324 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 20;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color: #1d3c45;
+  --secondary-color: #d2601a;
+  --accent-color: #1d3c45;
+  --white-color: #d4a59a;
+  --primary-font: 'IBM Plex Sans', sans-serif;
 }
 
 body{
-    background-color: whitesmoke;
-} 
- /*Header Starts*/
-header {
-    display: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 35px;
-    background-color: #072c50;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-  }  
+  background-color: #fff1e1;
+}
 
-header h1 a{
-    font-weight: bolder;
-    font-size: 40px;
-    color: #b88746;
-    margin: 0;
-    left: 150px;
-  }
-
+/*Header Starts*/
 header a {
-    text-decoration: none;
-    color: #b88746;
-    font-weight: bold;
-    text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header a:hover {
-  background: #b88746;
-  color: #072c50;
-  border-radius: 5px;
-  text-shadow: none;
-}
-  
 header nav {
-    margin: 7px 0;
+  margin: 7px 0;
 }
-  
+
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
-  
+
 header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
 }
 
 header nav ul li a:hover{
-  background: #b88746;
-  color: #072c50;
-  border-radius: 5px;
-  text-shadow: none;
+  color: var(--main-color);
+  text-decoration: underline;
 }
-/*Header End*/
 
 /*Hero Start*/
 .hero {
-    background-image: url("../../images/jujuy-hero.jpg");
-    background-size: cover;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-position: center;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-    align-items: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2,200px);
 }
 
-.hero-cta {
-    color: #072c50;
-    width: 35%;
-    margin: 3.5%;
-    font-size: 55px;
-    line-height: 1.3;
-    position: absolute;
+.second-color{
+  grid-column: 1;
+  grid-row: span 2;
+  background-color: var(--main-color);
 }
 
-.hero-form h3 {
-    font-size: 40px;
-    margin:0;
-}
-/*Hero End*/
-
-/* Index Start*/
-#list {
-  text-align: center;
-  padding: 20px;
-  font-size: 45px;
-  color: #072c50;
+h1 {
+  margin-left: 30%;
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 90px;
+  color: var(--accent-color);
+  font-family: var(--primary-font);
 }
 
-.link a {
-  padding: 20px;
-  color: #072c50;
-  font-family: 'Times New Roman', Times, serif;
+span {
+  color: var(--secondary-color);
 }
-
-.link a:hover {
-  background: #b88746;
-  color: #072c50;
-  border-radius: 15px;
-  text-shadow: none;
-}
-/* Index End */
 
 /* About Me Start */
 h2 {
   font-weight: bolder;
   font-size: 35px;
-  color: #072c50;
+  color: var(--main-color);
   margin: 0;
   left: 150px;
   text-align: center;
   padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: underline;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 p {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+  padding: 20px;
 }
 
 img {
   display: flex;
   width: 100%;
   height: 100%;
+  padding: 20px;
 }
-/* About Me End */
-
-/*Contact Start*/  
-section nav {
-    margin: 7px 0;
-    padding: 5%;
-}
-
-section nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-} 
-
-section nav ul li a {
-    padding: 10px;
-    font-weight: lighter;
-    font-size: 20px;
-    color: #072c50;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-section nav ul li a:hover {
-    background: #b88746;
-    color: #072c50;
-    border-radius: 15px;
-}
-/*Contact Ends*/
 
 /*Work Project Starts*/
-.photo {
-  display: flex;
-  width: 100%;
-  padding: 20px; 
+.project-grid {
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+  display: grid;
+  margin: 30px;
+  padding: 10px
 }
 
-.photo:hover {
-  filter: brightness(50%);
+.grid-item {
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  z-index: 50;
+  padding: 10px;
 }
-/* Work Project Ends */
+
+.grid-item h4,.grid-item p {
+  background-color: var(--accent-color);
+  color: black;
+  padding: 15px;
+  font-size: 30px;
+  font-family: var(--primary-font);
+}
+
+.grid-item:nth-child(even):hover {
+  border: 7px solid var(--main-color); 
+}
+.grid-item:nth-child(odd):hover {
+  border: 7px solid var(--secondary-color)
+}
+
+.item-one {
+  background: url(../../images/fof-home.png);
+  background-size: cover;
+  grid-column: span 2;
+}
+
+.item-two {
+  background: url(../../images/schedule.jpg);
+  background-size: cover;
+}
+
+.item-three {
+  background: url(../../images/holidayplanner.jpg);
+  background-size: cover;
+}
+
+.item-four {
+  background: url(../../images/book.jpg);
+  background-size: cover;
+}
+
+.item-five {
+  background: url(../../images/weather.jpeg);
+  background-size: cover;
+}
+
+#tech-used {
+  font-size: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#tech-used i {
+  padding: 20px
+}
+
+/* Footer */
+footer {
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+}
+
+footer h2 {
+  padding: 5%;
+  color: var(--secondary-color);
+  font-size: 45px;
+}
+
+.contact-item {
+  text-align: center;
+  padding:5%;
+  font-size: 20px;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 980px){
+  .square {
+      display: none;
+  }
+  #about-image {
+      padding-right: 10px;
+      padding-left: -5px;
+      width: 85%;
+      margin-top: 25px;
+  }
+  .hero {
+      grid-template-rows:repeat(3, 150px);
+  }
+  h1 {
+      font-size: 70px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .square {
+      display: none;
+  }
+  h1 {
+      font-size: 60px;
+      margin-left: 20%;
+  }
+  .contact-link{
+      display: none;
+      
+  }
+  .contact-item{
+      font-size: 30px;
+  }
+  #tech-used {
+      margin: 20px
+  }
+  #tech-used i {
+      padding: 15px
+  }
+}
+
+@media screen and (max-width: 575px){
+  .skills {
+      flex-wrap: wrap;
+  }
+  .square {
+      display: none;
+  }
+  .hero {
+      background-color: var(--main-color);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: block;
+      padding: 50px 0;
+  }
+  h1 {
+      text-align: left;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      margin-top: -10px;
+      background-color: var(--secondary-color);
+      color: var(--accent-color);
+      padding: 15px;
+  }
+  #about-me {
+      flex-direction: column;
+  }
+  .about-body h3 {
+      text-align: left;
+      margin-top: 40px;
+      padding: 0;
+  }
+  .project-grid {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .grid-item h5,.grid-item p {
+      background-color: var(--secondary-color);
+      color: var(--accent-color);
+      padding: 10px;
+      font-size: 20px;
+      font-family: var(--primary-font);
+  
+  }
+  .grid-item {
+      flex: 1;
+      margin-left: -40px; 
+      padding: 50px;
+
+  }
+  .contact-item {
+      font-size: 15px;
+      padding: 3px;
+  }
+  .contact-item i {
+      font-size: 25px;
+      padding: 5px;
+  }
+  #tech-used {
+      margin: 20px
+  }
+  #tech-used i {
+      padding: 15px
+  }
+  footer {
+      width: 100%;
+      padding: 0 20px;
+  }
+}
