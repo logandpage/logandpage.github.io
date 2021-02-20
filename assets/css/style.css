@@ -2,18 +2,19 @@
   margin: 0;
   padding: 20;
   box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 :root{
-  --main-color: #1d3c45;
-  --secondary-color: #d2601a;
-  --accent-color: #1d3c45;
+  --main-color: #6c6c6a;
+  --secondary-color: white;
+  --accent-color: #6c6c6a;
   --white-color: #d4a59a;
   --primary-font: 'IBM Plex Sans', sans-serif;
 }
 
 body{
-  background-color: #fff1e1;
+  background-color: #81D8D0;
 }
 
 /*Header Starts*/
@@ -198,7 +199,7 @@ footer h2 {
 }
 
 .contact-item a:hover {
-  color: var(--secondary-color);
+  color: #81D8D0;
 }
 
 a {
