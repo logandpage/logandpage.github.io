@@ -2,19 +2,19 @@
   margin: 0;
   padding: 20;
   box-sizing: border-box;
-  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
 }
 
 :root{
-  --main-color: #6c6c6a;
+  --main-color: #272725;
   --secondary-color: white;
-  --accent-color: #6c6c6a;
+  --accent-color: #272725;
   --white-color: #d4a59a;
   --primary-font: 'IBM Plex Sans', sans-serif;
 }
 
 body{
-  background-color: #81D8D0;
+  background-color: #0a40a5;
 }
 
 /*Header Starts*/
