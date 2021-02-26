@@ -3,18 +3,18 @@
   padding: 20;
   box-sizing: border-box;
   /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* color: #363636; */
 }
 
 :root{
-  --main-color: #6c6c6a;
-  --secondary-color: white;
-  --accent-color: #6c6c6a;
-  --white-color: #d4a59a;
+  --main-color: #2e6697;
+  --secondary-color: #ff8c42;
+  --white-color: white;
   --primary-font: 'IBM Plex Sans', sans-serif;
 }
 
 body{
-  background-color: #81D8D0;
+  background-color: whitesmoke;
 }
 
 /*Header Starts*/
@@ -37,12 +37,13 @@ header nav ul {
 
 header nav ul li a {
   margin: 0 30px;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1.55vw;
+  color: var(--main-color);
 }
 
 header nav ul li a:hover{
-  color: var(--main-color);
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -64,7 +65,7 @@ h1 {
   grid-row: 2;
   grid-column: 3;
   font-size: 90px;
-  color: var(--accent-color);
+  color: var(--main-color);
   font-family: var(--primary-font);
 }
 
@@ -99,10 +100,10 @@ img {
 
 /*Work Project Starts*/
 .project-grid {
-  grid-template-rows: repeat(2, 300px);
+  /* grid-template-rows: repeat(2, 300px);
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: dense;
-  grid-gap: 10px;
+  grid-gap: 10px; */
   display: grid;
   margin: 30px;
   padding: 10px
@@ -116,12 +117,17 @@ img {
   padding: 10px;
 }
 
-.grid-item h4,.grid-item p {
-  background-color: var(--accent-color);
-  color: black;
+.grid-item h4 {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  text-decoration: underline;
   padding: 15px;
-  font-size: 30px;
+  font-size: 15px;
   font-family: var(--primary-font);
+}
+
+.grid-item h4:hover {
+  color: #363636;
 }
 
 .grid-item:nth-child(even):hover {
@@ -129,32 +135,6 @@ img {
 }
 .grid-item:nth-child(odd):hover {
   border: 7px solid var(--secondary-color)
-}
-
-.item-one {
-  background: url(../../images/fof-home.png);
-  background-size: cover;
-  grid-column: span 2;
-}
-
-.item-two {
-  background: url(../../images/schedule.jpg);
-  background-size: cover;
-}
-
-.item-three {
-  background: url(../../images/holidayplanner.jpg);
-  background-size: cover;
-}
-
-.item-four {
-  background: url(../../images/book.jpg);
-  background-size: cover;
-}
-
-.item-five {
-  background: url(../../images/weather.jpeg);
-  background-size: cover;
 }
 
 #tech-used {
@@ -172,7 +152,7 @@ img {
 
 /* Footer */
 footer {
-  background-color: var(--accent-color);
+  background-color: var(--main-color);
   width: 100%;
   height: 400px;
   display: flex;
@@ -199,13 +179,13 @@ footer h2 {
 }
 
 .contact-item a:hover {
-  color: #81D8D0;
+  color: #ff8c42;
 }
 
-a {
+/* a {
   color: var(--secondary-color);
   text-decoration: none;
-}
+} */
 
 /*Media Queries*/
 @media screen and (max-width: 980px){
@@ -273,7 +253,7 @@ a {
       display: block;
       margin-top: -10px;
       background-color: var(--secondary-color);
-      color: var(--accent-color);
+      color: var(--main-color);
       padding: 15px;
   }
   #about-me {
@@ -292,7 +272,7 @@ a {
   }
   .grid-item h5,.grid-item p {
       background-color: var(--secondary-color);
-      color: var(--accent-color);
+      color: var(--main-color);
       padding: 10px;
       font-size: 20px;
       font-family: var(--primary-font);
