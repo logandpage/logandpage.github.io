@@ -16,13 +16,12 @@
 
 /*Header Starts*/
 header {
-  padding: 20px 35px;
+  padding: 20px;
 }
 
 header h1 {
   font-weight: bolder;
   font-size: 75px;
-  font-weight: bolder;
   margin: 0;
   font-family: "Montserrat";
   display: inline;
@@ -46,7 +45,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  margin: 20px;
   font-size: 22px;;
 }
 
@@ -198,118 +197,65 @@ footer h2 {
 
 
 /*Media Queries*/
-@media screen and (max-width: 980px){
-  .square {
-      display: none;
+@media screen and (max-width: 1180px){
+  header {
+    padding: 20px;
   }
-  #about-image {
-      padding-right: 10px;
-      padding-left: -5px;
-      width: 85%;
-      margin-top: 25px;
-  }
-  .hero {
-      grid-template-rows:repeat(3, 150px);
-  }
-  h1 {
-      font-size: 70px;
-  }
-}
-
-@media screen and (max-width:768px){
-  .square {
-      display: none;
-  }
-  h1 {
-      font-size: 60px;
-      margin-left: 20%;
-  }
-  .contact-link{
-      display: none;
-      
-  }
-  .contact-item{
-      font-size: 30px;
-  }
-  #tech-used {
-      margin: 20px
-  }
-  #tech-used i {
-      padding: 15px
-  }
-}
-
-@media screen and (max-width: 575px){
-  .skills {
-      flex-wrap: wrap;
-  }
-  .square {
-      display: none;
-  }
-  .hero {
-      background-color: var(--main-color);
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      display: block;
-      padding: 50px 0;
-  }
-  h1 {
-      text-align: left;
-      position: relative;
-      color: var(--white-color);
-      display: block;
-      margin-top: -10px;
-      background-color: var(--secondary-color);
-      color: var(--main-color);
-      padding: 15px;
-  }
-  #about-me {
-      flex-direction: column;
-  }
-  .about-body h3 {
-      text-align: left;
-      margin-top: 40px;
-      padding: 0;
-  }
-  .project-grid {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-  }
-  .grid-item h5,.grid-item p {
-      background-color: var(--secondary-color);
-      color: var(--main-color);
-      padding: 10px;
-      font-size: 20px;
-      font-family: var(--primary-font);
   
+  header h1 {
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 0;
+    font-family: "Montserrat";
+    color: var(--font-color)
   }
-  .grid-item {
-      flex: 1;
-      margin-left: -40px; 
-      padding: 50px;
+  
+  header a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bolder;
+  }
+  
+  header nav ul li {
+    display: inline;
+    font-family: "Montserrat";
+  }
 
+  header nav ul li a {
+    margin: 20px;
+    font-size: 18px;;
   }
-  .contact-item {
-      font-size: 15px;
-      padding: 3px;
+
+  .contact {
+    display: inline;
+    align-items: center;
   }
-  .contact-item i {
-      font-size: 25px;
-      padding: 5px;
+}
+
+@media screen and (max-width: 900px){
+  header {
+    padding: 20px;
   }
-  #tech-used {
-      margin: 20px
+  
+  header h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 0;
+    font-family: "Montserrat";
+    color: var(--font-color)
   }
-  #tech-used i {
-      padding: 15px
+  
+  header nav ul li {
+    display: inline;
+    font-family: "Montserrat";
   }
-  footer {
-      width: 100%;
-      padding: 0 20px;
+
+  header nav ul li a {
+    margin: 20px;
+    font-size: 13px;;
+  }
+
+  .hero {
+    height: 0px;
   }
 }
