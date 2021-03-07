@@ -3,6 +3,7 @@
   padding: 20;
   box-sizing: border-box;
   background-color: white;
+  font-family: "Montserrat";
 }
 
 :root{
@@ -14,28 +15,39 @@
 }
 
 /*Header Starts*/
+header {
+  padding: 20px 35px;
+}
+
+header h1 {
+  /* font-weight: bold; */
+  font-size: 75px;
+  font-weight: bolder;
+  margin: 0;
+  font-family: "Montserrat";
+  display: inline;
+  color: var(--font-color)
+}
+
 header a {
   text-decoration: none;
-  font-weight: bold;
+  color: var(--font-color);
+  font-weight: bolder;
 }
 
 header nav {
-  margin: 0;
+  float: right;
+  margin: 7px 0;
 }
 
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+header nav ul li {
+  display: inline;
+  font-family: "Montserrat";
 }
 
 header nav ul li a {
   margin: 0 30px;
-  font-weight: bold;
-  font-size: 1.55vw;
-  color: var(--font-color);
+  font-size: 22px;;
 }
 
 header nav ul li a:hover{
@@ -46,7 +58,7 @@ header nav ul li a:hover{
 /*Hero Start*/
 .hero {
   background-color: var(--font-color);
-  height: 400px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -67,19 +79,20 @@ span {
 
 /* About Me Start */
 h2 {
-  font-weight: bolder;
   font-size: 35px;
-  color: var(--font-color);
+  font-weight: bold;
+  color: black;
   margin: 0;
   left: 150px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
-  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: "Montserrat";
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 p {
   font-size: 20px;
-  /* font-family: 'Times New Roman', Times, serif; */
   padding: 20px;
 }
 
@@ -115,6 +128,8 @@ img {
   text-align: center;
   display: flex;
   padding: 20px;
+  height: 60%;
+  width: 60%;
 }
 
 .cn:hover .image {
@@ -126,12 +141,8 @@ img {
 }
 
 .text {
-  padding: 16px 32px;
-  height: 100%;
-  width: 100%;
+  padding: 12px 24px;
 }
-
-
 
 /* Skills */
 #tech-used {
@@ -145,6 +156,27 @@ img {
 
 #tech-used i {
   padding: 20px
+}
+
+/* contact */
+.contact {
+  display:flex;
+  align-items: center;
+}
+
+.contact-item {
+  text-align: center;
+  padding:5%;
+  font-size: 20px;
+}
+
+.contact-item a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--hover-color);
 }
 
 /* Footer */
@@ -163,26 +195,6 @@ footer h2 {
   color: var(--secondary-color);
   font-size: 45px;
 }
-
-.contact-item {
-  text-align: center;
-  padding:5%;
-  font-size: 20px;
-}
-
-.contact-item a {
-  color: var(--font-color);
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  color: var(--hover-color);
-}
-
-/* a {
-  color: var(--secondary-color);
-  text-decoration: none;
-} */
 
 
 /*Media Queries*/
