@@ -56,7 +56,7 @@ header nav ul li a:hover{
 
 /*Hero Start*/
 .hero {
-  background-color: var(--main-color);
+  background-image: url(../../images/hero.jpg);
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -166,12 +166,13 @@ img {
   display:flex;
   align-items: center;
   background-color: var(--main-color);
+  padding: 20px;
 }
 
 .contact-item {
   text-align: center;
-  padding:5%;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 15px;
 }
 
 .contact-item a {
